@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    height: initial;
+    overflow: hidden;
+}
+body{
+    height: 100svh;
+    width: 100svw;
+}
+main{
+    height: 100svh;
+    width: 100svw;
+    background-color: rgb(8, 83, 188);
+}
+#top-div{
+    height: 15%;
+    width: 100%;
+    color: white;
+    padding-top: 2rem;
+    z-index: 1;
+}
+#content-handler{
+    height: 60%;
+    width: 100%;
+    background-color: white;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+}
+#middle-div{
+    background-color: white;
+    height: 100%;
+    width: inherit;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    gap: .5rem;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    z-index: 2;
+    overflow-y: scroll;
+}
+#middle-div::-webkit-scrollbar{
+    width: 0;
+}
+#middle-div img{
+    height: 95%;
+    width: 95%;
+}
+#bottom-div{
+    height: 25%;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: rgb(8, 83, 188);
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    z-index: 5;
+}
+#bottom-div button{
+    width: 42%;
+    height: 2rem;
+}
+form{
+    height: initial;
+    width: 100%;
+    display: none;
+}
+form input{
+    width: 75%;
+    height: 2rem;
+    margin-top: 1rem;
+    padding-left: .2rem;
+}
+form input[value="submit"]{
+    background-color: rgb(8, 83, 188);
+    color: white;
+}
+form p{
+    color: rgb(8, 83, 188);
+    margin-top: 2rem;
+    border-bottom: 2px solid;
+    width: 9rem;
+    font-weight: bolder;
+}
+#back-arrow{
+    border: 1px solid;
+    width: 40%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    background-color: rgb(8, 83, 188);
+    color: white;
+    font-size: 1.2rem;
+}
