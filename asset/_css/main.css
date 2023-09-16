@@ -3,12 +3,18 @@
     margin: 0;
     height: initial;
     overflow: hidden;
+    box-sizing: border-box;
 }
 body{
     height: 100svh;
     width: 100svw;
 }
 main{
+    height: 100svh;
+    width: 100svw;
+    background-color: rgb(8, 83, 188);
+}
+#container{
     height: 100svh;
     width: 100svw;
     background-color: rgb(8, 83, 188);
@@ -74,10 +80,15 @@ form input{
     height: 2rem;
     margin-top: 1rem;
     padding-left: .2rem;
+    font-weight: bolder;
 }
-form input[value="submit"]{
+input[value="submit"]{
     background-color: rgb(8, 83, 188);
     color: white;
+    height: 2rem;
+    width: 17.5rem;
+    margin-top: 1rem;
+    font-weight: bolder;
 }
 form p{
     color: rgb(8, 83, 188);
@@ -97,4 +108,175 @@ form p{
     background-color: rgb(8, 83, 188);
     color: white;
     font-size: 1.2rem;
+}
+#profile{
+    height: 100svh;
+    width: 100svw;
+    display: none;
+    background-color: white;
+}
+#profile #top{
+    background-color: rgb(8, 83, 188);
+    height: 18%;
+    color: white;
+    display: flex;
+    align-items: last baseline;
+    justify-content: start;
+    font-size: 2rem;
+    transition: .5s;
+}
+#profile #top h1{
+    width: 55%;
+    scale: .2;
+}
+#profile img{
+    width: 5rem;
+    scale: .8;
+    position: relative;
+    right: -5rem;
+    top: -2rem;
+    border-radius: 50%;
+}
+
+#mid{
+    height: inherit;
+    width: inherit;
+}
+#all-houses{
+    /* background-color: rgb(255, 255, 255); */
+    height: 80%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    margin-top: 1rem;
+    /* gap: 1.5rem; */
+}
+.individual-houses{
+    border: 1px solid;
+    height: 70%;
+    width: 8rem;
+    position: relative;
+    left: -.8rem;
+    background-color: rgb(50, 93, 202);
+    color: white;
+}
+.image{
+    height: 55%;
+    width: inherit;
+}
+#hs-1{
+    background: url('../../resources/images\ \(29).jpeg') no-repeat center/cover;
+}
+#hs-2{
+    background: url('../../resources/images/Month.png') no-repeat center/cover;
+}
+#hs-3{
+    background: url('../../resources/images/10-2-Bedrooms-apartment-house-for-rent-in-east-legon-accra-ghana-kitchen-1401108682.jpg') no-repeat center/cover;
+}
+#hs-4{
+    background: url('../../resources/images/2-bed.jpeg') no-repeat center/cover;
+}
+#hs-5{
+    background: url('../../resources/images/2\ Bedrooms\ House\ for\ sale\ at\ Katamanso\ Accra-1446380041.jpg') no-repeat center/cover;
+}
+#hs-6{
+    background: url('../../resources/images/images\ \(1\).jpeg') no-repeat center/cover;
+}
+#hs-7{
+    background: url('../../resources/images/la__FillWzEyMDAsODAwXQ.jpg') no-repeat center/cover;
+}
+#hs-8{
+    background: url('../../resources/images/IMG-20220221-WA0122.jpg') no-repeat center/cover;
+}
+#hs-9{
+    background: url('../../resources/images/ty5.jpg') no-repeat center/cover;
+}
+
+
+
+#main{
+    height: 100svh;
+    width: 100svw;
+    display: inline-flexbox;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    /* display: none; */
+}
+#main::-webkit-scrollbar{
+    width: 0;
+}
+.desired{
+    height: 15rem;
+    width: 100%;
+    background-color: white;
+    padding-top: .5rem;
+}
+.interested{
+    width: 19rem;
+    height: 2rem;
+    background-color: rgb(50, 93, 202);
+    color: white;
+    font-weight: bolder;
+    margin-top: .21rem;
+}
+.extra-det p{
+    background-color: grey;
+    height: 1rem;
+    width: 19rem;
+}
+#selected{
+    width: 100%;
+}
+.desired:hover{
+    background-color: rgb(232, 81, 21);
+}
+#go-back{
+    z-index: 5;
+    position: fixed;
+    background-color: rgb(50, 93, 202);
+    width: 4rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+#pop-up{
+    height: 18rem;
+    width: 20rem;
+    background: rgba(152, 3, 3, 0.9);
+    position: relative;
+    top: -35rem;
+    z-index: 10;
+    border-radius: .5rem;
+    display: inline-flexbox;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    display: none;
+    transition: prop time;
+}
+#pop-up h3{
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+#pop-up span{
+    height: 2rem;
+    width: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem !important;
+}
+#ok{
+    width: 5rem;
+    height: 2rem;
+    margin-top: 1rem;
 }
