@@ -13,6 +13,7 @@ main{
     height: 100svh;
     width: 100svw;
     background-color: rgb(8, 83, 188);
+    display: none;
 }
 #container{
     height: 100svh;
@@ -114,6 +115,7 @@ form p{
     width: 100svw;
     display: none;
     background-color: white;
+    display: none;
 }
 #profile #top{
     background-color: rgb(8, 83, 188);
